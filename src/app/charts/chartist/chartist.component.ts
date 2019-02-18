@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import * as Chartist from 'chartist';
-import { ChartType, ChartEvent } from "ng-chartist";
+import { ChartType, ChartEvent } from 'ng-chartist';
 
-//Declarations
+// Declarations
 declare var require: any;
 const data: any = require('../../shared/data/chartist.json');
 
-//Interface
+// Interface
 export interface Chart {
     type: ChartType;
     data: Chartist.IChartistData;
@@ -421,7 +421,7 @@ export class ChartistComponent {
             startAngle: 270,
             total: 200,
             showLabel: true,
-        },       
+        },
     };
     // Donut Chart 1 Ends
 
@@ -434,7 +434,7 @@ export class ChartistComponent {
             showLabel: true,
             labelDirection: 'implode',
 
-        },        
+        },
     };
     // Donut Chart 2 Ends
 }

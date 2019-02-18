@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ChartistComponent } from "./chartist/chartist.component";
-import { ChartjsComponent } from "./chartjs/chartjs.component";
-import { NGXChartsComponent } from "./ngx-charts/ngx-charts.component";
+import { ChartistComponent } from './chartist/chartist.component';
+import { ChartjsComponent } from './chartjs/chartjs.component';
+import { NGXChartsComponent } from './ngx-charts/ngx-charts.component';
 
 const routes: Routes = [
   {
-    path: '',     
+    path: '',
     children: [
       {
         path: 'chartist',
@@ -29,7 +29,7 @@ const routes: Routes = [
         data: {
           title: 'NGX Charts'
         }
-      },     
+      },
     ]
   }
 ];

@@ -75,13 +75,11 @@ export class ChartjsComponent {
 
   // events
   public chartClicked(e: any): void {
-    //your code here
+    // your code here
   }
 
   public chartHovered(e: any): void {
-    //your code here
+    // your code here
   }
-
-  
 
 }

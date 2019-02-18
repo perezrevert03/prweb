@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { BasicCardsComponent } from "./basic/basic-cards.component";
-import { AdvancedCardsComponent } from "./advanced/advanced-cards.component";
+import { BasicCardsComponent } from './basic/basic-cards.component';
+import { AdvancedCardsComponent } from './advanced/advanced-cards.component';
 
 const routes: Routes = [
     {

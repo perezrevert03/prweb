@@ -10,13 +10,13 @@ import * as chartsData from '../../shared/configs/ngx-charts.config';
 
 export class NGXChartsComponent {
 
-    //Chart Data
+    // Chart Data
     lineChartMulti = lineChartMulti;
     areaChartMulti = areaChartMulti;
     barChartmulti = barChartmulti;
     pieChartSingle = pieChartSingle;
 
-    //Bar Charts
+    // Bar Charts
     barChartView: any[] = chartsData.barChartView;
 
     // options
@@ -30,7 +30,7 @@ export class NGXChartsComponent {
     barChartYAxisLabel = chartsData.barChartYAxisLabel;
     barChartColorScheme = chartsData.barChartColorScheme;
 
-    //Pie Charts
+    // Pie Charts
 
     pieChartView: any[] = chartsData.pieChartView;
 
@@ -49,7 +49,7 @@ export class NGXChartsComponent {
     pieChart1Doughnut = chartsData.pieChart1Doughnut;
 
 
-    //Line Charts
+    // Line Charts
 
     lineChartView: any[] = chartsData.lineChartView;
 
@@ -69,7 +69,7 @@ export class NGXChartsComponent {
     lineChartAutoScale = chartsData.lineChartAutoScale;
     lineChartLineInterpolation = chartsData.lineChartLineInterpolation;
 
-    //Area Charts
+    // Area Charts
 
     areaChartView = chartsData.areaChartView;
 
@@ -94,7 +94,7 @@ export class NGXChartsComponent {
     }
 
     onSelect(event) {
-       //your code here
+       // your code here
     }
 
 }

@@ -47,7 +47,7 @@ const colors: any = {
 export class CalendarsComponent {
   @ViewChild('modalContent') modalContent: TemplateRef<any>;
 
-  view: string = 'month';
+  view = 'month';
 
   newEvent: CalendarEvent;
 
@@ -110,7 +110,7 @@ export class CalendarsComponent {
     }
   ];
 
-  activeDayIsOpen: boolean = true;
+  activeDayIsOpen = true;
 
   constructor(private modal: NgbModal) { }
 
@@ -164,4 +164,4 @@ export class CalendarsComponent {
      this.refresh.next();
   }
 }
-//Calendar event handler ends
+// Calendar event handler ends

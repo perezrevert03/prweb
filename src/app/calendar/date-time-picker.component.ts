@@ -23,6 +23,7 @@ export const DATE_TIME_PICKER_CONTROL_VALUE_ACCESSOR: any = {
 };
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'mwl-demo-utils-date-time-picker',
   template: `
     <form class="form-inline">
