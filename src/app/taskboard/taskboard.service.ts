@@ -4,8 +4,6 @@ import { Task } from './taskboard.model';
 @Injectable()
 export class TaskBoardService {
 
-    constructor() { }
-
     public todo: Task[] = [
         new Task(
             'Responsive',
@@ -115,4 +113,7 @@ export class TaskBoardService {
     gettodo() {
         return this.todo;
       }
+
+      constructor() { }
+
 }

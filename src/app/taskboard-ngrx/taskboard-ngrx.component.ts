@@ -42,7 +42,7 @@ export class TaskboardNGRXComponent implements OnInit {
   }
 
   onAddTask() {
-    if (this.messageInputRef.nativeElement.value != "" && this.titleInputRef.nativeElement.value != "") {
+    if (this.messageInputRef.nativeElement.value != '' && this.titleInputRef.nativeElement.value != '') {
       this.store.dispatch(new TaskboadActions.AddTodo(new Task(
         this.titleInputRef.nativeElement.value,
         this.messageInputRef.nativeElement.value,
@@ -52,8 +52,8 @@ export class TaskboardNGRXComponent implements OnInit {
         'New'
       )));
     }
-    this.titleInputRef.nativeElement.value = "";
-    this.messageInputRef.nativeElement.value = "";
+    this.titleInputRef.nativeElement.value = '';
+    this.messageInputRef.nativeElement.value = '';
     this.titleInputRef.nativeElement.focus();
   }
 

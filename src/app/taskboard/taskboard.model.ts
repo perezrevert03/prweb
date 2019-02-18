@@ -5,8 +5,8 @@ export class Task {
     public createdBy: string;
     public assignedTo: string;
     public status: string;
-  
-    constructor(taskTitle: string, taskMessage:string, createdOn: string, createdBy: string, assignedTo: string, status: string) {
+
+    constructor(taskTitle: string, taskMessage: string, createdOn: string, createdBy: string, assignedTo: string, status: string) {
       this.taskTitle = taskTitle;
       this.taskMessage = taskMessage;
       this.createdOn = createdOn;
@@ -15,4 +15,3 @@ export class Task {
       this.status = status;
     }
   }
-  

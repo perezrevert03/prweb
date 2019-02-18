@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from "@angular/common";
+import { CommonModule } from '@angular/common';
 import { StoreModule } from '@ngrx/store';
 
 import { DragulaModule } from 'ng2-dragula';
-import { TaskboardNGRXRoutingModule } from "./taskboard-ngrx-routing.module";
+import { TaskboardNGRXRoutingModule } from './taskboard-ngrx-routing.module';
 
-import { TaskboardNGRXComponent } from "./taskboard-ngrx.component";
+import { TaskboardNGRXComponent } from './taskboard-ngrx.component';
 import { taskReducer } from '../taskboard-ngrx/store/taskboard.reducers';
 
 
