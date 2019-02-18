@@ -2,7 +2,7 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 var fireRefreshEventOnWindow = function () {
-    var evt = document.createEvent("HTMLEvents");
+    var evt = document.createEvent('HTMLEvents');
     evt.initEvent('resize', true, false);
     window.dispatchEvent(evt);
 };
@@ -23,10 +23,10 @@ export class FullLayoutComponent implements OnInit {
     constructor(private elementRef: ElementRef) { }
 
     ngOnInit() {
-        //sidebar toggle event listner
+        // sidebar toggle event listner
         this.elementRef.nativeElement.querySelector('#sidebarToggle')
             .addEventListener('click', this.onClick.bind(this));
-        //customizer events
+        // customizer events
         this.elementRef.nativeElement.querySelector('#cz-compact-menu')
             .addEventListener('click', this.onClick.bind(this));
         this.elementRef.nativeElement.querySelector('#cz-sidebar-width')
@@ -34,7 +34,7 @@ export class FullLayoutComponent implements OnInit {
     }
 
     onClick(event) {
-        //initialize window resizer event on sidebar toggle click event
+        // initialize window resizer event on sidebar toggle click event
         setTimeout(() => { fireRefreshEventOnWindow() }, 300);
     }
 
