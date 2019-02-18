@@ -1,5 +1,5 @@
 import * as shape from 'd3-shape';
-//Bar Chart
+// Bar Chart
 
 export var barChartView: any[] = [550, 400];
 
@@ -17,7 +17,7 @@ export var barChartColorScheme = {
     domain: ['#009DA0', '#FF8D60', '#FF586B', '#AAAAAA']
 };
 
-//Pie CHart
+// Pie CHart
 
 export var pieChartView: any[] = [550, 400];
 
@@ -37,7 +37,7 @@ export var pieChartGradient = false;
 export var pieChart1ExplodeSlices = true;
 export var pieChart1Doughnut = false;
 
-//Line Charts
+// Line Charts
 
 export var lineChartView: any[] = [550, 400];
 
@@ -59,7 +59,7 @@ export var lineChartColorScheme = {
 export var lineChartAutoScale = true;
 export var lineChartLineInterpolation = shape.curveBasis;
 
-//Area Charts
+// Area Charts
 export var areaChartView: any[] = [550, 400];
 
 // options

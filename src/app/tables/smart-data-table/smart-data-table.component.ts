@@ -20,8 +20,11 @@ export class SmartTableComponent {
         this.alertSource = new LocalDataSource(tableData.alertdata); // create the source
     }
 
+    // tslint:disable-next-line:member-ordering
     settings = tableData.settings;
+    // tslint:disable-next-line:member-ordering
     filtersettings = tableData.filtersettings;
+    // tslint:disable-next-line:member-ordering
     alertsettings = tableData.alertsettings;
 
 
@@ -46,7 +49,7 @@ export class SmartTableComponent {
                 search: query,
             },
         ], false);
-        // second parameter specifying whether to perform 'AND' or 'OR' search 
+        // second parameter specifying whether to perform 'AND' or 'OR' search
         // (meaning all columns should contain search query or at least one)
         // 'AND' by default, so changing to 'OR' by setting false here
     }

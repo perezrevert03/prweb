@@ -22,14 +22,14 @@ export class CustomizerComponent implements OnInit, AfterViewChecked {
 
     // setTimeout(() => {
     //   var wrapperDiv = document.getElementsByClassName("wrapper")[0];
-    //   var dir = wrapperDiv.getAttribute("dir");      
-    //   this.options.direction = dir;      
+    //   var dir = wrapperDiv.getAttribute("dir");
+    //   this.options.direction = dir;
     // }, 3000);
 
 
   }
 
-  sendOptions() {    
+  sendOptions() {
     this.directionEvent.emit(this.options);
   }
 

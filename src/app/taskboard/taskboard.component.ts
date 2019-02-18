@@ -13,11 +13,11 @@ export class TaskboardComponent  {
 
   @ViewChild('todoTitle') titleInputRef: ElementRef;
   @ViewChild('todoMessage') messageInputRef: ElementRef;
-  
-  public todo:Task[];
-  public inProcess:Task[];
-  public backLog:Task[];
-  public completed:Task[];
+
+  public todo: Task[];
+  public inProcess: Task[];
+  public backLog: Task[];
+  public completed: Task[];
 
   constructor(private elRef: ElementRef, private taskBoardService: TaskBoardService) {
     this.todo = taskBoardService.todo;
@@ -27,12 +27,12 @@ export class TaskboardComponent  {
   }
 
   onAddTask() {
-    if (this.messageInputRef.nativeElement.value != "" && this.titleInputRef.nativeElement.value != "") {
+    if (this.messageInputRef.nativeElement.value != '' && this.titleInputRef.nativeElement.value != '') {
       this.taskBoardService.addNewTask(this.titleInputRef.nativeElement.value, this.messageInputRef.nativeElement.value);
       this.todo = this.taskBoardService.gettodo();
     }
-    this.titleInputRef.nativeElement.value = "";
-    this.messageInputRef.nativeElement.value = "";
+    this.titleInputRef.nativeElement.value = '';
+    this.messageInputRef.nativeElement.value = '';
     this.titleInputRef.nativeElement.focus();
   }
 
