@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
     styleUrls: ['./media-objects.component.scss']
 })
 
-export class MediaObjectsComponent {
-
-}
+export class MediaObjectsComponent { }
