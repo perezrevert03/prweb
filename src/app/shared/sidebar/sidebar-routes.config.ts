@@ -2,7 +2,11 @@ import { RouteInfo } from './sidebar.metadata';
 
 // Sidebar menu Routes and data
 export const ROUTES: RouteInfo[] = [
-
+    { path: '/home', title: 'Home', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+    { path: '/estudios', title: 'Estudios', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+    { path: '/experiencia', title: 'Experiencia', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+    { path: '/cursos-y-certificados', title: 'Cursos', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+    { path: '/redes-sociales', title: 'RRSS', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
     {
         path: '', title: 'Dashboard', icon: 'ft-home', class: 'has-sub', badge: '2', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false, submenu: [
             { path: '/dashboard/dashboard1', title: 'Dashboard1', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },

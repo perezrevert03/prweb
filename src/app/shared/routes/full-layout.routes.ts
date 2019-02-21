@@ -4,6 +4,26 @@ import { Routes, RouterModule } from '@angular/router';
 
 export const Full_ROUTES: Routes = [
   {
+    path: 'home',
+    loadChildren: './home/home.module#HomeModule'
+  },
+  {
+    path: 'estudios',
+    loadChildren: './estudios/estudios.module#EstudiosModule'
+  },
+  {
+    path: 'experiencia',
+    loadChildren: './experiencia/experiencia.module#ExperienciaModule'
+  },
+  {
+    path: 'cursos-y-certificados',
+    loadChildren: './cursos/cursos.module#CursosModule'
+  },
+  {
+    path: 'redes-sociales',
+    loadChildren: './redes/redes.module#RedesModule'
+  },
+  {
     path: 'dashboard',
     loadChildren: './dashboard/dashboard.module#DashboardModule'
   },

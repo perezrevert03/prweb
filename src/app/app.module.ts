@@ -22,8 +22,6 @@ import { AuthGuard } from './shared/auth/auth-guard.service';
 
 import * as $ from 'jquery';
 
-
-
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
   }
