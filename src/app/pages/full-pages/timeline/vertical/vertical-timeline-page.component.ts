@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chartist from 'chartist';
-import { ChartType, ChartEvent } from "ng-chartist";
+import { ChartType, ChartEvent } from 'ng-chartist';
 
 declare var require: any;
 const data: any = require('../../../../shared/data/chartist.json');
@@ -27,10 +27,13 @@ export class VerticalTimelinePageComponent implements OnInit {
     }
 
     // Google map lat-long
-    lat: number = 40.650002;
-    lng: number = -73.949997;
+    // tslint:disable-next-line:member-ordering
+    lat = 40.650002;
+    // tslint:disable-next-line:member-ordering
+    lng = -73.949997;
 
     // Line with Area Chart 1 Starts
+    // tslint:disable-next-line:member-ordering
     lineArea1: Chart = {
         type: 'Line',
         data: data['lineArea1'],
