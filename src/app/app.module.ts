@@ -17,9 +17,6 @@ import { AppComponent } from './app.component';
 import { ContentLayoutComponent } from './layouts/content/content-layout.component';
 import { FullLayoutComponent } from './layouts/full/full-layout.component';
 
-import { AuthService } from './shared/auth/auth.service';
-import { AuthGuard } from './shared/auth/auth-guard.service';
-
 import * as $ from 'jquery';
 
 export function createTranslateLoader(http: HttpClient) {
@@ -52,10 +49,7 @@ export function createTranslateLoader(http: HttpClient) {
             apiKey: 'AIzaSyBr5_picK8YJK7fFR2CPzTVMj6GG1TtRGo'
         })
     ],
-    providers: [
-        AuthService,
-        AuthGuard
-    ],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
