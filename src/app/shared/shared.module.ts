@@ -8,7 +8,6 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { CustomizerComponent } from './customizer/customizer.component';
 import { ToggleFullscreenDirective } from './directives/toggle-fullscreen.directive';
 
 
@@ -18,7 +17,6 @@ import { ToggleFullscreenDirective } from './directives/toggle-fullscreen.direct
         FooterComponent,
         NavbarComponent,
         SidebarComponent,
-        CustomizerComponent,
         ToggleFullscreenDirective,
         NgbModule,
         TranslateModule
@@ -33,7 +31,6 @@ import { ToggleFullscreenDirective } from './directives/toggle-fullscreen.direct
         FooterComponent,
         NavbarComponent,
         SidebarComponent,
-        CustomizerComponent,
         ToggleFullscreenDirective
     ]
 })
